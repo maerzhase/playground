@@ -21,7 +21,7 @@ const wkhtmltopdf_async = (url, res, options) => new Promise((resolve, reject) =
  const dynamicImageHandler = (children, styles, options={}) => async (req, res) => {
   const { query } = req;
   const { referer, host } = req.headers;
-  const refererUrl = new URL(`${HOSTNAME}${query.url}`);
+  // const refererUrl = new URL(`${HOSTNAME}${query.url}`);
  	const {
  		width=200, 
  		height= 200,
@@ -46,7 +46,7 @@ const wkhtmltopdf_async = (url, res, options) => new Promise((resolve, reject) =
   // res.writeHead(200, { 'Content-Type': 'image/png' });
       //res.end(stream, 'binary');
   try {
-    const stream = await wkhtmltopdf_async(refererUrl.href, res,  { pageSize: 'letter' });
+    const stream = await wkhtmltopdf_async('http://google.com/', res,  { pageSize: 'letter' });
   } catch(error) {
     console.log(error);
     // res.send("400");
