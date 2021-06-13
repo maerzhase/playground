@@ -1,4 +1,3 @@
-import nodeHtmlToImage from 'node-html-to-image';
 import ReactDOMServer from 'react-dom/server';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import wkhtmltopdf from 'wkhtmltopdf';
