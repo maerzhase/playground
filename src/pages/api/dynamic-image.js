@@ -1,6 +1,6 @@
 import React from 'react';
 import createDynamicImageHandler from '@/utils/dynamic-image';
-import DynamicImage from '@/componennts/DynamicImage';
+import DynamicImage from '@/components/DynamicImage';
 import Test from '@/components/Test';
 import ReactDOMServer from 'react-dom/server';
 import Cors from 'cors'
