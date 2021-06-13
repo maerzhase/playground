@@ -1,0 +1,14 @@
+# build output
+dist
+out
+.next
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+.npmrc
+.env.local
+packages/**
